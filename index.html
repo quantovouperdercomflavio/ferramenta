@@ -91,9 +91,9 @@ details th{font-weight:600;color:var(--ink)}
 <body>
 <div class="wrap">
   <div class="top">
-    <p class="alert">Candidato X quer cortar o reajuste do seu programa social.</p>
+    <p class="alert">Flávio Bolsonaro quer cortar o reajuste do seu programa social.</p>
     <p class="provoke">O pai dele congelou o Bolsa Família. Você acha que ele não fará o mesmo?</p>
-    <h1>Quanto eu vou perder nos próximos 5 anos se o Candidato X congelar meus benefícios?</h1>
+    <h1>Quanto eu vou perder nos próximos 5 anos se o Flávio Bolsonaro congelar meus benefícios?</h1>
   </div>
 
   <form id="form" autocomplete="off" style="display:flex;flex-direction:column;gap:28px">
@@ -220,7 +220,7 @@ details th{font-weight:600;color:var(--ink)}
   function mesesTxt(n){ return n === 1 ? "1 mês" : n + " meses"; }
 
   function shareText(){
-    return "Candidato X quer cortar o reajuste de programas sociais.\n\n" +
+    return "Flávio Bolsonaro quer cortar o reajuste de programas sociais.\n\n" +
       "Se ele congelar " + last.p.mine + ", vou perder o mesmo que " + mesesTxt(last.meses) +
       " de benefício nos próximos 5 anos.\n\n" + HASHTAG + "\n\n" +
       "Veja o quanto você vai perder. Acesse:\n" + SITE;
@@ -273,7 +273,7 @@ details th{font-weight:600;color:var(--ink)}
 
     var y=150; ctx.textBaseline="alphabetic";
     ctx.fillStyle="#B0281F"; ctx.font="700 44px "+body;
-    wrapLines(ctx, "Candidato X quer cortar o reajuste de programas sociais.", W-pad*2).forEach(function(l){ ctx.fillText(l,pad,y); y+=58; });
+    wrapLines(ctx, "Flávio Bolsonaro quer cortar o reajuste de programas sociais.", W-pad*2).forEach(function(l){ ctx.fillText(l,pad,y); y+=58; });
 
     y+=60;
     ctx.font="700 60px "+disp;
@@ -303,7 +303,7 @@ details th{font-weight:600;color:var(--ink)}
     ctx.fillStyle="#B0281F"; ctx.fillText(SITE,pad,by+bh-20);
     ctx.fillStyle="#FFFFFF";
     ctx.font="400 24px "+body; ctx.globalAlpha=.85;
-    ctx.fillText("Simulação hipotética. Inflação: previsão do Banco Central.",pad,H-40);
+  
     ctx.globalAlpha=1;
     return c;
   }
